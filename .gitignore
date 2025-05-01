@@ -1,0 +1,47 @@
+import java.util.Stack;
+
+public class EjemploPila {
+    public static void main(String[] args) {
+        Stack<String> pila = new Stack<>();
+
+        // Agregar elementos
+        pila.push("A");
+        pila.push("B");
+        pila.push("C");
+
+        System.out.println("Pila: " + pila);
+
+        // Ver el tope sin eliminar
+        System.out.println("Elemento en el tope: " + pila.peek());
+
+        // Eliminar elemento del tope
+        System.out.println("Elemento eliminado: " + pila.pop());
+
+        System.out.println("Pila después del pop: " + pila);
+    }
+}
+
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class EjemploCola {
+    public static void main(String[] args) {
+        Queue<String> cola = new LinkedList<>();
+
+        // Agregar elementos
+        cola.offer("A");
+        cola.offer("B");
+        cola.offer("C");
+
+        System.out.println("Cola: " + cola);
+
+        // Ver el frente sin eliminar
+        System.out.println("Elemento al frente: " + cola.peek());
+
+        // Eliminar elemento del frente
+        System.out.println("Elemento eliminado: " + cola.poll());
+
+        System.out.println("Cola después del poll: " + cola);
+    }
+}
